@@ -1,11 +1,10 @@
 'use strict';
-const routes = require('./routes/api');
 const express = require('express');
 
 const app = express();
 
 // this tell express that we want to use our routes from our routes page on api.js... the use method.
-app.use('/api', routes);
+app.use('/api', require('./reoutes/api'));
 
 app.get('/', function(){
 	console.log('GET request!');
