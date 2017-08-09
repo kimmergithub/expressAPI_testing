@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 
 // this tell express that we want to use our routes from our routes page on api.js... the use method.
-app.use(routes);
+app.use('/api', routes);
 
 app.get('/', function(){
 	console.log('GET request!');
