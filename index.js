@@ -1,5 +1,5 @@
 'use strict';
-const routes = require('./routes/api'):
+const routes = require('./routes/api');
 const express = require('express');
 
 const app = express();
